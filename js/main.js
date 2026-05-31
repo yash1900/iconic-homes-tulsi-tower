@@ -117,6 +117,12 @@ function initStickyHeader() {
   const header = document.querySelector('.site-header');
   if (!header) return;
 
+  const isTransparent = header.classList.contains('header-transparent');
+  if (!isTransparent) {
+    header.classList.add('scrolled');
+    return;
+  }
+
   const handleScroll = () => {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
@@ -144,6 +150,8 @@ function initMobileNav() {
 
   if (!toggle || !menu) return;
 
+  const isTransparent = header.classList.contains('header-transparent');
+
   toggle.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('open');
     toggle.classList.toggle('open', isOpen);
@@ -154,7 +162,7 @@ function initMobileNav() {
       document.body.style.overflow = 'hidden'; // Prevent background scrolling
     } else {
       document.body.style.overflow = ''; // Restore scrolling
-      if (window.scrollY <= 50) {
+      if (isTransparent && window.scrollY <= 50) {
         header.classList.remove('scrolled');
       }
     }
@@ -167,7 +175,7 @@ function initMobileNav() {
       menu.classList.remove('open');
       toggle.classList.remove('open');
       document.body.style.overflow = '';
-      if (window.scrollY <= 50) {
+      if (isTransparent && window.scrollY <= 50) {
         header.classList.remove('scrolled');
       }
     });
@@ -298,10 +306,15 @@ function highlightActiveLink() {
   const currentPath = window.location.pathname;
   const pageName = currentPath.substring(currentPath.lastIndexOf('/') + 1) || 'index.html';
   
+  // Clean page name and link paths to prevent mismatch on Vercel (.html extension stripping)
+  const cleanPath = pageName.replace('.html', '').toLowerCase();
+  
   const navLinks = document.querySelectorAll('.nav-link');
   navLinks.forEach(link => {
     const href = link.getAttribute('href');
-    if (href === pageName) {
+    const cleanHref = href.replace('.html', '').toLowerCase();
+    
+    if (cleanHref === cleanPath || (cleanHref === 'index' && cleanPath === '')) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');

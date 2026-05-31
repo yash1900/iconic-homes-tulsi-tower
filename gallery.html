@@ -170,10 +170,10 @@
       
       <!-- Category Filter Tabs -->
       <div class="filter-nav" id="gallery-filters">
-        <button class="filter-btn active" onclick="filterGallery('all')">All Images</button>
-        <button class="filter-btn" onclick="filterGallery('progress')">Construction Progress</button>
-        <button class="filter-btn" onclick="filterGallery('delivered')">Delivered Buildings</button>
-        <button class="filter-btn" onclick="filterGallery('renders')">Architectural Renders</button>
+        <button class="filter-btn active" onclick="filterGallery(this, 'all')">All Images</button>
+        <button class="filter-btn" onclick="filterGallery(this, 'progress')">Construction Progress</button>
+        <button class="filter-btn" onclick="filterGallery(this, 'delivered')">Delivered Buildings</button>
+        <button class="filter-btn" onclick="filterGallery(this, 'renders')">Architectural Renders</button>
       </div>
       
       <!-- Gallery Grid -->
@@ -339,14 +339,13 @@
     document.getElementById('current-year').textContent = new Date().getFullYear();
     
     // Client-side category filtering for gallery
-    function filterGallery(category) {
+    function filterGallery(btnElement, category) {
       // Update filter button active states
       const filterButtons = document.querySelectorAll('.filter-btn');
       filterButtons.forEach(btn => {
-        // Simple logic to set active state based on inline click
         btn.classList.remove('active');
       });
-      event.currentTarget.classList.add('active');
+      btnElement.classList.add('active');
 
       // Get all gallery cards
       const galleryItems = document.querySelectorAll('.gallery-item');

@@ -1,0 +1,13 @@
+# robots.txt for Iconic Homes Infracon - Tulsi Tower
+# https://iconic-homes-tulsi-tower.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories (none currently, but future-proof)
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://iconic-homes-tulsi-tower.vercel.app/sitemap.xml

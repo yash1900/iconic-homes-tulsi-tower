@@ -1,0 +1,20 @@
+{
+  "name": "iconic-homes-tulsi-tower",
+  "version": "1.0.0",
+  "description": "Production-ready website for Iconic Homes Infracon & Tulsi Tower",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "keywords": [
+    "realestate",
+    "builder",
+    "rera",
+    "responsive"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.3"
+  }
+}

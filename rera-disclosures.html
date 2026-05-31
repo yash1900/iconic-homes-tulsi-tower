@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View legal disclosures and MahaRERA compliance documents for Tulsi Tower by Iconic Homes. Approved layout plans, structural audits, and escrow updates.">
+  <title>RERA Disclosures — Iconic Homes Infracon</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    /* Subpage Header Banner */
+    .subpage-hero {
+      background-color: var(--color-navy);
+      color: var(--color-white);
+      padding: 140px 0 60px;
+      text-align: center;
+    }
+    .subpage-hero h1 {
+      color: var(--color-white);
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+    .subpage-hero p {
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .legal-card {
+      background-color: var(--color-white);
+      border: 1px solid var(--color-divider);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 32px;
+    }
+    
+    .doc-link-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .doc-link-item:last-child {
+      border-bottom: none;
+    }
+    .doc-title {
+      font-weight: 600;
+      color: var(--color-navy);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .doc-title i {
+      color: var(--color-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Header & Navigation
+       ========================================================================== -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-block" id="logo-link">
+        <span class="logo-text" data-config="company">Iconic Homes</span>
+        <span class="logo-tagline" data-config="tagline-hindi">आपके सपनों का घर</span>
+      </a>
+      
+      <nav class="nav-wrapper">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-about">Our Story</a></li>
+          <li><a href="tulsi-tower.html" class="nav-link" id="nav-tulsi">Tulsi Tower</a></li>
+          <li><a href="completed-projects.html" class="nav-link" id="nav-portfolio">Completed Projects</a></li>
+          <li><a href="why-choose-us.html" class="nav-link" id="nav-why">Why Choose Us</a></li>
+          <li><a href="gallery.html" class="nav-link" id="nav-gallery">Site Progress</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm" id="nav-cta-btn">Enquire Now</a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. Subpage Hero
+       ========================================================================== -->
+  <section class="subpage-hero" id="subpage-hero">
+    <div class="container">
+      <h1>RERA Disclosures &amp; Legals</h1>
+      <p>Legal transparency builds real trust. In compliance with RERA regulations, we make all project permissions, layouts, and audit updates available for public verification.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. Legal Sections
+       ========================================================================== -->
+  <section class="section-cream" id="rera-content">
+    <div class="container">
+      
+      <!-- Section 1: Registration -->
+      <div class="legal-card" id="compliance">
+        <div class="d-flex justify-between align-center flex-wrap gap-16" style="border-bottom: 1px solid var(--color-divider); padding-bottom: 20px; margin-bottom: 20px;">
+          <div>
+            <h2>MahaRERA Registration Details</h2>
+            <span class="meta-text" style="margin-top: 4px; display:block;">Active Registration Certificate</span>
+          </div>
+          <div class="rera-badge" style="font-size:1rem; padding: 10px 16px;">
+            <i data-lucide="shield-check" style="width:20px; height:20px;"></i>
+            <span>MahaRERA: <span data-config="rera">Loading...</span></span>
+          </div>
+        </div>
+        <p class="large">Tulsi Tower is a legally registered development under the Maharashtra Real Estate Regulatory Authority. Buyers can verify project details and promoters on the official government portal.</p>
+        <div style="margin-top: 24px;">
+          <a href="#" data-config="rera-link" class="btn btn-secondary" id="rera-portal-btn"><i data-lucide="external-link"></i> Verify on Official MahaRERA Portal</a>
+        </div>
+      </div>
+
+      <!-- Section 2: Approved Plans -->
+      <div class="legal-card" id="approved-docs">
+        <h3 style="margin-bottom: 16px; font-weight:700;">Approved Layouts &amp; Certificates</h3>
+        <p style="margin-bottom: 24px;">The following folders contain high-resolution PDF scans of approved architectural layout maps, structural stability clearances, and municipal commencement permissions.</p>
+        
+        <div style="border: 1px solid var(--color-divider); border-radius: 8px; background-color: var(--color-cream);">
+          <div class="doc-link-item">
+            <span class="doc-title"><i data-lucide="file-text"></i> Approved Building Layout Map</span>
+            <a href="#" class="btn-ghost" id="dl-layout-btn"><i data-lucide="download"></i> Download PDF</a>
+          </div>
+          <div class="doc-link-item">
+            <span class="doc-title"><i data-lucide="file-text"></i> Municipal Commencement Certificate (CC)</span>
+            <a href="#" class="btn-ghost" id="dl-cc-btn"><i data-lucide="download"></i> Download PDF</a>
+          </div>
+          <div class="doc-link-item">
+            <span class="doc-title"><i data-lucide="file-text"></i> Structural Engineer Stability Certification</span>
+            <a href="#" class="btn-ghost" id="dl-stability-btn"><i data-lucide="download"></i> Download PDF</a>
+          </div>
+          <div class="doc-link-item">
+            <span class="doc-title"><i data-lucide="file-text"></i> Environment Clearance Board Letter</span>
+            <a href="#" class="btn-ghost" id="dl-environment-btn"><i data-lucide="download"></i> Download PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Escrow / Audits -->
+      <div class="legal-card" id="reports">
+        <h3 style="margin-bottom: 16px; font-weight:700;">Quarterly Progress Reports (QPR)</h3>
+        <p style="margin-bottom: 24px;">Under the RERA Act, developers are required to submit quarterly progress reports logging physical construction stages and audited bank transaction files. We publish these updates here for transparency.</p>
+        
+        <div style="border: 1px solid var(--color-divider); border-radius: 8px; background-color: var(--color-cream);">
+          <div class="doc-link-item">
+            <span class="doc-title"><i data-lucide="check-square"></i> Q1 2026 Progress Milestone Log</span>
+            <a href="#" class="btn-ghost" id="dl-q1-2026-btn"><i data-lucide="download"></i> Download Report</a>
+          </div>
+          <div class="doc-link-item">
+            <span class="doc-title"><i data-lucide="check-square"></i> Q4 2025 Progress Milestone Log</span>
+            <a href="#" class="btn-ghost" id="dl-q4-2025-btn"><i data-lucide="download"></i> Download Report</a>
+          </div>
+          <div class="doc-link-item">
+            <span class="doc-title"><i data-lucide="check-square"></i> Annual Financial Escrow Audit Report (FY25)</span>
+            <a href="#" class="btn-ghost" id="dl-escrow-fy25-btn"><i data-lucide="download"></i> Download Report</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Disclaimers -->
+      <div class="legal-card" id="rera-disclaimer">
+        <h4 style="color:var(--color-navy); margin-bottom:12px;">RERA Legal Disclaimer</h4>
+        <p style="font-size:0.875rem; color:var(--color-grey); line-height: 1.6;">The specifications, images, renders, layouts, and plans shown on this website are indicative and for promotional purposes only. The company reserves the right to make changes to layouts, configurations, and amenities in compliance with municipal permissions and MahaRERA rules. Homebuyers are advised to inspect the approved layout maps, structural calculations, and RERA registration documents physically at our site office prior to making bookings.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. Footer Section
+       ========================================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="grid-12">
+        <div class="col-4 col-12-tablet d-flex flex-column gap-16">
+          <div class="footer-logo">
+            <span class="logo-text" data-config="company">Iconic Homes</span>
+            <span class="logo-tagline" style="display:block;" data-config="tagline-hindi">आपके सपनों का घर</span>
+          </div>
+          <p style="font-size: 0.875rem;">A family-owned developer based on absolute integrity, delivering premium Vastu-compliant residential housing projects direkt from the builder without broker commission.</p>
+        </div>
+        
+        <div class="col-3 col-6-mobile">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story (About)</a></li>
+            <li><a href="tulsi-tower.html">Tulsi Tower (Active Project)</a></li>
+            <li><a href="completed-projects.html">Completed Projects</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="gallery.html">Site Milestones</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-2 col-6-mobile">
+          <h4>Legals</h4>
+          <ul class="footer-links">
+            <li><a href="rera-disclosures.html">RERA Disclosures</a></li>
+            <li><a href="rera-disclosures.html#compliance">State Compliance</a></li>
+            <li><a href="rera-disclosures.html#reports">Quarterly Reports</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-3 col-12-tablet">
+          <h4>Office Details</h4>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <span style="font-size: 0.875rem;" data-config="address">Loading Office Address...</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <a href="tel:+919876543210" style="font-size: 0.875rem;" data-config="phone">+91 98765 43210</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="clock"></i>
+            <span style="font-size: 0.875rem;" data-config="hours">Loading timings...</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom d-flex justify-between align-center flex-wrap gap-16">
+        <div>
+          <span>&copy; <span id="current-year">2026</span> <span data-config="company">Iconic Homes Infracon</span>. All Rights Reserved.</span>
+        </div>
+        <div class="rera-badge">
+          <i data-lucide="shield-check"></i>
+          <span>RERA No. <span data-config="rera">Loading...</span></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       5. Floating WhatsApp Button
+       ========================================================================== -->
+  <div class="whatsapp-widget" id="whatsapp-widget">
+    <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+    <a href="#" class="whatsapp-button" data-config="whatsapp" aria-label="Chat on WhatsApp" id="whatsapp-widget-btn">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.99L2 22l5.19-1.354a9.95 9.95 0 0 0 4.82 1.233h.005c5.502 0 9.985-4.479 9.988-9.986.002-2.67-1.032-5.18-2.918-7.07A9.92 9.92 0 0 0 12.012 2zm5.72 14.158c-.313.882-1.815 1.72-2.5 1.83-.687.11-1.372.19-3.953-.872-3.13-1.29-5.11-4.48-5.267-4.69-.157-.21-1.25-1.666-1.25-3.178 0-1.513.79-2.257 1.07-2.56.282-.303.62-.38.83-.38.21 0 .42.01.6.02.19.01.44-.08.69.53.25.61.85 2.08.93 2.23.08.15.13.33.03.53-.1.2-.21.33-.37.52-.16.19-.34.42-.48.56-.16.16-.33.34-.14.67.19.33.85 1.4 1.83 2.28 1.25 1.12 2.3 1.47 2.63 1.63.33.16.52.12.72-.11.2-.23.85-.99 1.08-1.33.23-.34.46-.29.77-.17.31.12 1.99.94 2.33 1.11.34.17.57.25.65.39.08.14.08.82-.23 1.7z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Shared Configuration & JS -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

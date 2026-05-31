@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Tulsi Tower by Iconic Homes. Modern 2 & 3 BHK Vastu-compliant apartments in Kharghar, Navi Mumbai. Check amenities, pricing, floor plans, and RERA approvals.">
+  <title>Tulsi Tower — Kharghar | Iconic Homes Infracon</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    /* Subpage Header Banner */
+    .subpage-hero {
+      background-color: var(--color-navy);
+      color: var(--color-white);
+      padding: 140px 0 60px;
+      text-align: center;
+    }
+    .subpage-hero h1 {
+      color: var(--color-white);
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+    .subpage-hero p {
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+    }
+    .spec-table th, .spec-table td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--color-divider);
+    }
+    .spec-table th {
+      background-color: var(--color-cream);
+      color: var(--color-navy);
+      font-weight: 600;
+    }
+    
+    /* Amenities Icons Grid */
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .amenity-item {
+      background-color: var(--color-white);
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid var(--color-divider);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      box-shadow: var(--shadow-sm);
+    }
+    .amenity-item i {
+      color: var(--color-gold);
+      width: 32px;
+      height: 32px;
+    }
+    
+    /* Interactive Tab Layouts */
+    .tabs-nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--color-divider);
+      padding-bottom: 12px;
+    }
+    .tab-btn {
+      background: none;
+      border: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--color-grey);
+      padding: 8px 24px;
+      cursor: pointer;
+      position: relative;
+    }
+    .tab-btn.active {
+      color: var(--color-navy);
+    }
+    .tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: var(--color-gold);
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .amenities-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Header & Navigation
+       ========================================================================== -->
+  <header class="site-header scrolled" id="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-block" id="logo-link">
+        <span class="logo-text" data-config="company">Iconic Homes</span>
+        <span class="logo-tagline" data-config="tagline-hindi">आपके सपनों का घर</span>
+      </a>
+      
+      <nav class="nav-wrapper">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-about">Our Story</a></li>
+          <li><a href="tulsi-tower.html" class="nav-link active" id="nav-tulsi">Tulsi Tower</a></li>
+          <li><a href="completed-projects.html" class="nav-link" id="nav-portfolio">Completed Projects</a></li>
+          <li><a href="why-choose-us.html" class="nav-link" id="nav-why">Why Choose Us</a></li>
+          <li><a href="gallery.html" class="nav-link" id="nav-gallery">Site Progress</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm" id="nav-cta-btn">Enquire Now</a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. Subpage Hero
+       ========================================================================== -->
+  <section class="subpage-hero" id="subpage-hero">
+    <div class="container">
+      <div class="rera-badge" style="background-color: rgba(234, 244, 239, 0.95); margin-bottom:16px;">
+        <i data-lucide="shield-check"></i>
+        <span>RERA Registered · <span data-config="rera">Loading...</span></span>
+      </div>
+      <h1>Tulsi Tower — Kharghar</h1>
+      <p>Luxury meets grounded quality. Explore configurations, floor plans, construction progress, and calculation splits below.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. Project Overview
+       ========================================================================== -->
+  <section class="section-cream" id="project-overview">
+    <div class="container">
+      <div class="grid-12 align-center">
+        <div class="col-6 col-12-tablet">
+          <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md); aspect-ratio: 4/3;">
+            <img src="assets/images/tulsi-tower-hero.png" alt="Tulsi Tower facade" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+        </div>
+        
+        <div class="col-6 col-12-tablet d-flex flex-column gap-20">
+          <span class="tag-badge" style="color: var(--color-gold);">Overview &amp; Details</span>
+          <h2>A Home Designed for Life</h2>
+          <p>Tulsi Tower is a modern residential mid-rise development located in the premium Sector 12 enclave of Kharghar. Nestled in front of lush green views and connected directly to the highway, the project offers a peaceful home life with urban access.</p>
+          
+          <table class="spec-table" id="specifications-table">
+            <tbody>
+              <tr>
+                <td><strong>Location</strong></td>
+                <td>Plot 45, Sector 12, Kharghar, Navi Mumbai</td>
+              </tr>
+              <tr>
+                <td><strong>Project Type</strong></td>
+                <td>Residential Apartment Complex (Stilt + 12 Floors)</td>
+              </tr>
+              <tr>
+                <td><strong>Status</strong></td>
+                <td>Under Construction (RERA Verified milestones)</td>
+              </tr>
+              <tr>
+                <td><strong>Expected Possession</strong></td>
+                <td><span data-config="possession">December 2027</span></td>
+              </tr>
+              <tr>
+                <td><strong>Compliance</strong></td>
+                <td>100% Vastu-Compliant Layouts</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <div>
+            <a href="rera-disclosures.html" class="btn btn-secondary" id="rera-specs-btn">View RERA Escrow &amp; Legals</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. Configurations & Pricing
+       ========================================================================== -->
+  <section class="section-white" id="configurations">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 48px;">
+        <span class="tag-badge" style="color: var(--color-gold);">Flat Layouts</span>
+        <h2>Available Configurations</h2>
+        <p>Choose the size that fits your family. Built with thick structural columns, ensuring noise insulation and safety.</p>
+      </div>
+      
+      <div class="grid-12">
+        <div class="col-6 col-12-tablet">
+          <div class="card" id="config-2bhk">
+            <div style="padding: 12px 16px; background-color: var(--color-cream); border-radius: 8px; font-weight: 700; color: var(--color-navy); align-self: flex-start; margin-bottom: 20px;">
+              2 BHK Vastu Layout
+            </div>
+            <h3>2 BHK Premium Apartments</h3>
+            <p>Perfect for nuclear families. Features cross-ventilated living rooms, dual master toilets, private flower beds, and a dedicated kitchen utility space.</p>
+            <table class="spec-table" style="font-size: 0.875rem; margin-bottom: 24px;">
+              <tbody>
+                <tr>
+                  <td>Carpet Area</td>
+                  <td>685 sq ft (63.6 sq mt)</td>
+                </tr>
+                <tr>
+                  <td>Balconies</td>
+                  <td>2 Flower beds + 1 utility dry balcony</td>
+                </tr>
+                <tr>
+                  <td>Pricing</td>
+                  <td><strong>₹82 Lakhs onwards</strong> (All-inclusive basic cost)</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#quick-inquiry" class="btn btn-primary" style="margin-top: auto;" id="enquire-2bhk-btn">Enquire About 2 BHK</a>
+          </div>
+        </div>
+        
+        <div class="col-6 col-12-tablet">
+          <div class="card" id="config-3bhk">
+            <div style="padding: 12px 16px; background-color: var(--color-navy); color: var(--color-white); border-radius: 8px; font-weight: 700; align-self: flex-start; margin-bottom: 20px;">
+              3 BHK Vastu Layout
+            </div>
+            <h3>3 BHK Grand Apartments</h3>
+            <p>Designed for joint families and premium comfort. Large living cum dining area, 3 master-sized bedrooms, separate powder room, and premium road-facing balconies.</p>
+            <table class="spec-table" style="font-size: 0.875rem; margin-bottom: 24px;">
+              <tbody>
+                <tr>
+                  <td>Carpet Area</td>
+                  <td>945 sq ft (87.8 sq mt)</td>
+                </tr>
+                <tr>
+                  <td>Balconies</td>
+                  <td>3 Balconies + 1 utility dry balcony</td>
+                </tr>
+                <tr>
+                  <td>Pricing</td>
+                  <td><strong>₹1.15 Crore onwards</strong> (All-inclusive basic cost)</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#quick-inquiry" class="btn btn-primary" style="margin-top: auto;" id="enquire-3bhk-btn">Enquire About 3 BHK</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. Floor Plan Tab Viewer
+       ========================================================================== -->
+  <section class="section-cream" id="floor-plans">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+        <span class="tag-badge" style="color: var(--color-gold);">Floor Plans</span>
+        <h2>Explore Layout Blueprints</h2>
+        <p>Review Vastu placements: Master bedroom in South-West, kitchen in South-East (Agni corner), and entrance facing East/North.</p>
+      </div>
+      
+      <div class="tabs-nav" id="floor-plan-tabs">
+        <button class="tab-btn active" onclick="switchTab(event, 'tab-2bhk')">2 BHK Plan</button>
+        <button class="tab-btn" onclick="switchTab(event, 'tab-3bhk')">3 BHK Plan</button>
+      </div>
+      
+      <div class="tab-content active" id="tab-2bhk">
+        <div class="grid-12 align-center">
+          <div class="col-7 col-12-tablet">
+            <div style="background-color: var(--color-white); border: 2px dashed var(--color-gold); border-radius: 12px; padding: 32px; text-align: center; box-shadow: var(--shadow-sm); aspect-ratio: 4/3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
+              <i data-lucide="layout" style="width: 48px; height: 48px; color: var(--color-gold);"></i>
+              <h4 style="color:var(--color-navy);">2 BHK Carpet Plan Map (685 sq ft)</h4>
+              <p style="font-size:0.875rem; max-width:400px; margin: 0 auto;">Standard layout blueprint approved by municipal developers showing dimensions of master bedroom (11x12), kids bedroom (10x10), living (12x18) and kitchen (8x10).</p>
+              <a href="#" class="btn btn-secondary btn-sm" id="download-2bhk-plan-btn"><i data-lucide="download"></i> Download PDF Floor Plan</a>
+            </div>
+          </div>
+          <div class="col-5 col-12-tablet d-flex flex-column gap-16">
+            <h3>2 BHK Layout Highlights</h3>
+            <ul style="padding-left: 20px; display:flex; flex-direction:column; gap:12px;">
+              <li><strong>Kitchen Placement:</strong> Southeast corner layout.</li>
+              <li><strong>Bedrooms:</strong> South-West master bedroom with attached bathroom.</li>
+              <li><strong>Ventilation:</strong> Parallel windows in the living room for natural cross-breeze.</li>
+              <li><strong>Dry Balcony:</strong> Dedicated partition for washing machine and sink drainage.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="tab-3bhk">
+        <div class="grid-12 align-center">
+          <div class="col-7 col-12-tablet">
+            <div style="background-color: var(--color-white); border: 2px dashed var(--color-gold); border-radius: 12px; padding: 32px; text-align: center; box-shadow: var(--shadow-sm); aspect-ratio: 4/3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
+              <i data-lucide="layout" style="width: 48px; height: 48px; color: var(--color-gold);"></i>
+              <h4 style="color:var(--color-navy);">3 BHK Carpet Plan Map (945 sq ft)</h4>
+              <p style="font-size:0.875rem; max-width:400px; margin: 0 auto;">Standard layout blueprint approved by municipal developers showing dimensions of master bedroom (12x14), bedroom 2 (11x12), guest bedroom (10x11), living (14x22) and kitchen (9x11).</p>
+              <a href="#" class="btn btn-secondary btn-sm" id="download-3bhk-plan-btn"><i data-lucide="download"></i> Download PDF Floor Plan</a>
+            </div>
+          </div>
+          <div class="col-5 col-12-tablet d-flex flex-column gap-16">
+            <h3>3 BHK Layout Highlights</h3>
+            <ul style="padding-left: 20px; display:flex; flex-direction:column; gap:12px;">
+              <li><strong>Living Area:</strong> Over 300 sq ft combined living and dining space.</li>
+              <li><strong>Privacy:</strong> Lobby entrance prevents direct visual access to bedrooms.</li>
+              <li><strong>Balconies:</strong> Double sliding glass doors opening to a 5ft deep balcony.</li>
+              <li><strong>Vastu:</strong> Puja room space aligned with the North-East direction.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. Amenities Grid
+       ========================================================================== -->
+  <section class="section-white" id="amenities">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 48px;">
+        <span class="tag-badge" style="color: var(--color-gold);">Amenities</span>
+        <h2>Crafted for Comfortable Living</h2>
+        <p>We deliver essential amenities that work everyday — prioritizing robust machinery and low maintenance fees.</p>
+      </div>
+      
+      <div class="amenities-grid">
+        <div class="amenity-item" id="amenity-lift">
+          <i data-lucide="arrow-up-down"></i>
+          <h4>Dual High-Speed Lifts</h4>
+          <p style="font-size:0.8125rem; color:var(--color-grey);">Schindler/Otis automatic elevators with ARD (Automatic Rescue Device).</p>
+        </div>
+        <div class="amenity-item" id="amenity-parking">
+          <i data-lucide="car"></i>
+          <h4>Assigned Stilt Parking</h4>
+          <p style="font-size:0.8125rem; color:var(--color-grey);">Secure, covered car parking spaces at stilt and stack levels.</p>
+        </div>
+        <div class="amenity-item" id="amenity-power">
+          <i data-lucide="zap"></i>
+          <h4>24/7 Power Backup</h4>
+          <p style="font-size:0.8125rem; color:var(--color-grey);">Dedicated silent generator backing up elevators, pumps, and lobby lights.</p>
+        </div>
+        <div class="amenity-item" id="amenity-security">
+          <i data-lucide="shield"></i>
+          <h4>3-Tier Security</h4>
+          <p style="font-size:0.8125rem; color:var(--color-grey);">CCTV cameras, intercom, and trained guards at main lobby gates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. Home Loan EMI Calculator Widget
+       ========================================================================== -->
+  <section class="section-cream" id="calculator-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 56px;">
+        <span class="tag-badge" style="color: var(--color-gold);">Financial Planning</span>
+        <h2>Interactive EMI Estimator</h2>
+        <p>Estimate your monthly home loan installments. Pre-filled with typical bank rates (e.g. SBI reference rates).</p>
+      </div>
+      
+      <div class="grid-12 align-center">
+        <div class="col-7 col-12-tablet">
+          <div class="emi-calculator" id="emi-calc-widget">
+            <div class="emi-inputs">
+              <!-- Amount Slider -->
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span class="slider-title">Loan Amount (Lakhs)</span>
+                  <span class="slider-value-box" id="emi-amount-value">50 Lakhs</span>
+                </div>
+                <input type="range" class="range-slider" id="emi-amount-slider" min="10" max="200" step="5" value="50">
+              </div>
+              
+              <!-- Interest Rate Slider -->
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span class="slider-title">Annual Interest Rate (%)</span>
+                  <span class="slider-value-box" id="emi-rate-value">8.5%</span>
+                </div>
+                <input type="range" class="range-slider" id="emi-rate-slider" min="7" max="15" step="0.1" value="8.5">
+              </div>
+              
+              <!-- Tenure Slider -->
+              <div class="slider-group">
+                <div class="slider-header">
+                  <span class="slider-title">Tenure (Years)</span>
+                  <span class="slider-value-box" id="emi-tenure-value">20 Years</span>
+                </div>
+                <input type="range" class="range-slider" id="emi-tenure-slider" min="1" max="30" step="1" value="20">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-5 col-12-tablet">
+          <div class="emi-results" id="emi-results-box">
+            <span class="tag-badge" style="color: var(--color-grey);">Estimated Monthly Installment</span>
+            <div class="emi-value" id="calculated-emi">₹43,391</div>
+            
+            <div class="emi-chart-wrapper">
+              <div class="emi-pie-chart" id="emi-pie-chart"></div>
+            </div>
+            
+            <div style="display:flex; justify-content:center; gap:16px; font-size:0.75rem; margin-bottom:12px;">
+              <span style="color:var(--color-navy);"><i data-lucide="square" style="fill:var(--color-navy); width:10px; height:10px; margin-right:4px;"></i> Principal</span>
+              <span style="color:var(--color-gold);"><i data-lucide="square" style="fill:var(--color-gold); width:10px; height:10px; margin-right:4px;"></i> Interest</span>
+            </div>
+            
+            <div class="emi-details-grid">
+              <div class="emi-detail-item">
+                <span class="meta-text" style="font-size:0.75rem;">Total Principal</span>
+                <span class="emi-detail-num" id="total-principal">₹50,00,000</span>
+              </div>
+              <div class="emi-detail-item">
+                <span class="meta-text" style="font-size:0.75rem;">Total Interest</span>
+                <span class="emi-detail-num" id="total-interest" style="color: var(--color-gold-hover);">₹54,13,879</span>
+              </div>
+            </div>
+            <div style="margin-top: 16px; font-size:0.8125rem;" class="meta-text">
+              Total Amount: <span id="total-payable" style="font-weight: 700;">₹1,04,13,879</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. Maps & Location Section
+       ========================================================================== -->
+  <section class="section-white" id="location-map-section">
+    <div class="container">
+      <div class="grid-12 align-center">
+        <div class="col-7 col-12-tablet">
+          <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md); aspect-ratio: 16/10;">
+            <iframe data-config="map-iframe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-5 col-12-tablet d-flex flex-column gap-24">
+          <div>
+            <span class="tag-badge" style="color: var(--color-gold);">Location Advantage</span>
+            <h2>Connected to Your World</h2>
+            <p>Tulsi Tower is located in the well-planned Sector 12 area of Kharghar, boasting robust roads and established community structures.</p>
+          </div>
+          
+          <div class="d-flex flex-column gap-16">
+            <div class="d-flex align-center gap-12">
+              <i data-lucide="check-circle" style="color: var(--color-gold); flex-shrink:0;"></i>
+              <span class="meta-text"><strong>Metro Station:</strong> 5 mins drive (Kharghar Metro Stop)</span>
+            </div>
+            <div class="d-flex align-center gap-12">
+              <i data-lucide="check-circle" style="color: var(--color-gold); flex-shrink:0;"></i>
+              <span class="meta-text"><strong>Highway Access:</strong> 3 mins to Sion-Panvel Expressway</span>
+            </div>
+            <div class="d-flex align-center gap-12">
+              <i data-lucide="check-circle" style="color: var(--color-gold); flex-shrink:0;"></i>
+              <span class="meta-text"><strong>Schools/Hospitals:</strong> Ryan International &amp; Tata Hospital within 2 km</span>
+            </div>
+            <div class="d-flex align-center gap-12">
+              <i data-lucide="check-circle" style="color: var(--color-gold); flex-shrink:0;"></i>
+              <span class="meta-text"><strong>Recreation:</strong> Kharghar Hills &amp; Central Park within 10 mins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. Sticky Lead capture & WhatsApp Section
+       ========================================================================== -->
+  <section class="section-cream" id="quick-inquiry">
+    <div class="container">
+      <div class="grid-12">
+        <div class="col-5 col-12-tablet d-flex flex-column gap-20">
+          <div>
+            <span class="tag-badge" style="color: var(--color-gold);">Enquire Direct</span>
+            <h2>Register for Booking Options</h2>
+            <p>Our sales team will share real photos of construction progress, sample flats, and customized payment schedules.</p>
+          </div>
+          <div class="d-flex flex-column gap-12" style="border-top:1px solid var(--color-divider); padding-top:20px;">
+            <div class="rera-badge" style="align-self: flex-start;">
+              <i data-lucide="shield-check"></i>
+              <span>MahaRERA No. <span data-config="rera">Loading...</span></span>
+            </div>
+            <p style="font-size:0.875rem;" class="meta-text">Buyers are advised to inspect original layout documents and RERA details at our site office before booking.</p>
+          </div>
+        </div>
+        
+        <div class="col-7 col-12-tablet">
+          <div style="background-color: var(--color-white); padding: 32px; border-radius: 12px; box-shadow: var(--shadow-md);">
+            <h3 style="margin-bottom: 8px;">Request Floor Plans &amp; Prices</h3>
+            <p style="color: var(--color-grey); margin-bottom: 24px; font-size: 0.9375rem;">Complete the form below to receive pricing sheets directly.</p>
+            
+            <form class="lead-form" id="project-lead-form">
+              <div class="grid-12">
+                <div class="col-6 col-12-mobile form-group">
+                  <label class="form-label" for="proj-name">Your Name *</label>
+                  <input type="text" class="form-control" id="proj-name" name="name" placeholder="e.g., Vikram Joshi" required>
+                  <span class="form-error"></span>
+                </div>
+                
+                <div class="col-6 col-12-mobile form-group">
+                  <label class="form-label" for="proj-phone">Mobile Number *</label>
+                  <input type="tel" class="form-control" id="proj-phone" name="phone" placeholder="10-digit mobile number" required>
+                  <span class="form-error"></span>
+                </div>
+                
+                <div class="col-12 form-group">
+                  <label class="form-label" for="proj-email">Email Address (Optional)</label>
+                  <input type="email" class="form-control" id="proj-email" name="email" placeholder="e.g., name@example.com">
+                  <span class="form-error"></span>
+                </div>
+                
+                <div class="col-12 form-group">
+                  <label class="form-label">Preferred Configuration *</label>
+                  <select class="form-control" name="message" required>
+                    <option value="2 BHK Apartment - Tulsi Tower">2 BHK Vastu Apartment</option>
+                    <option value="3 BHK Apartment - Tulsi Tower">3 BHK Vastu Apartment</option>
+                    <option value="General Enquiry - Tulsi Tower">General/Both Configurations</option>
+                  </select>
+                  <span class="form-error"></span>
+                </div>
+                
+                <div class="col-12" style="margin-top: 8px;">
+                  <button type="submit" class="btn btn-primary" style="width: 100%;" id="proj-submit-btn">Send Details &amp; Request Pricing</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. Footer Section
+       ========================================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="grid-12">
+        <div class="col-4 col-12-tablet d-flex flex-column gap-16">
+          <div class="footer-logo">
+            <span class="logo-text" data-config="company">Iconic Homes</span>
+            <span class="logo-tagline" style="display:block;" data-config="tagline-hindi">आपके सपनों का घर</span>
+          </div>
+          <p style="font-size: 0.875rem;">A family-owned developer based on absolute integrity, delivering premium Vastu-compliant residential housing projects direkt from the builder without broker commission.</p>
+        </div>
+        
+        <div class="col-3 col-6-mobile">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story (About)</a></li>
+            <li><a href="tulsi-tower.html">Tulsi Tower (Active Project)</a></li>
+            <li><a href="completed-projects.html">Completed Projects</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="gallery.html">Site Milestones</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-2 col-6-mobile">
+          <h4>Legals</h4>
+          <ul class="footer-links">
+            <li><a href="rera-disclosures.html">RERA Disclosures</a></li>
+            <li><a href="rera-disclosures.html#compliance">State Compliance</a></li>
+            <li><a href="rera-disclosures.html#reports">Quarterly Reports</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-3 col-12-tablet">
+          <h4>Office Details</h4>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <span style="font-size: 0.875rem;" data-config="address">Loading Office Address...</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <a href="tel:+919876543210" style="font-size: 0.875rem;" data-config="phone">+91 98765 43210</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="clock"></i>
+            <span style="font-size: 0.875rem;" data-config="hours">Loading timings...</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom d-flex justify-between align-center flex-wrap gap-16">
+        <div>
+          <span>&copy; <span id="current-year">2026</span> <span data-config="company">Iconic Homes Infracon</span>. All Rights Reserved.</span>
+        </div>
+        <div class="rera-badge">
+          <i data-lucide="shield-check"></i>
+          <span>RERA No. <span data-config="rera">Loading...</span></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       11. Floating WhatsApp Button
+       ========================================================================== -->
+  <div class="whatsapp-widget" id="whatsapp-widget">
+    <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+    <a href="#" class="whatsapp-button" data-config="whatsapp" aria-label="Chat on WhatsApp" id="whatsapp-widget-btn">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.99L2 22l5.19-1.354a9.95 9.95 0 0 0 4.82 1.233h.005c5.502 0 9.985-4.479 9.988-9.986.002-2.67-1.032-5.18-2.918-7.07A9.92 9.92 0 0 0 12.012 2zm5.72 14.158c-.313.882-1.815 1.72-2.5 1.83-.687.11-1.372.19-3.953-.872-3.13-1.29-5.11-4.48-5.267-4.69-.157-.21-1.25-1.666-1.25-3.178 0-1.513.79-2.257 1.07-2.56.282-.303.62-.38.83-.38.21 0 .42.01.6.02.19.01.44-.08.69.53.25.61.85 2.08.93 2.23.08.15.13.33.03.53-.1.2-.21.33-.37.52-.16.19-.34.42-.48.56-.16.16-.33.34-.14.67.19.33.85 1.4 1.83 2.28 1.25 1.12 2.3 1.47 2.63 1.63.33.16.52.12.72-.11.2-.23.85-.99 1.08-1.33.23-.34.46-.29.77-.17.31.12 1.99.94 2.33 1.11.34.17.57.25.65.39.08.14.08.82-.23 1.7z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Shared Configuration & JS -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/emi-calculator.js"></script>
+  
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Tab switching logic for floor plans
+    function switchTab(evt, tabId) {
+      // Get all elements with class="tab-content" and hide them
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Get all elements with class="tab-btn" and remove the class "active"
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(tabId).classList.add('active');
+      evt.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>

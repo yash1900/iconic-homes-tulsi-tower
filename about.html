@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read the founding story of Iconic Homes Infracon. Learn how Amar Malhotra built a family-owned developer based on trust, quality construction, and transparent dealing.">
+  <title>Our Story — Iconic Homes Infracon</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    /* Subpage Header Banner */
+    .subpage-hero {
+      background-color: var(--color-navy);
+      color: var(--color-white);
+      padding: 140px 0 60px;
+      text-align: center;
+    }
+    .subpage-hero h1 {
+      color: var(--color-white);
+      font-size: 3rem;
+      margin-bottom: 12px;
+    }
+    .subpage-hero p {
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .value-card {
+      background-color: var(--color-white);
+      border-top: 4px solid var(--color-gold);
+      padding: 32px;
+      border-radius: 0 0 12px 12px;
+      box-shadow: var(--shadow-sm);
+    }
+    
+    @media (max-width: 768px) {
+      .values-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. Header & Navigation
+       ========================================================================== -->
+  <header class="site-header scrolled" id="site-header"> <!-- Solid scrolled style on subpages -->
+    <div class="container nav-container">
+      <a href="index.html" class="logo-block" id="logo-link">
+        <span class="logo-text" data-config="company">Iconic Homes</span>
+        <span class="logo-tagline" data-config="tagline-hindi">आपके सपनों का घर</span>
+      </a>
+      
+      <nav class="nav-wrapper">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="about.html" class="nav-link active" id="nav-about">Our Story</a></li>
+          <li><a href="tulsi-tower.html" class="nav-link" id="nav-tulsi">Tulsi Tower</a></li>
+          <li><a href="completed-projects.html" class="nav-link" id="nav-portfolio">Completed Projects</a></li>
+          <li><a href="why-choose-us.html" class="nav-link" id="nav-why">Why Choose Us</a></li>
+          <li><a href="gallery.html" class="nav-link" id="nav-gallery">Site Progress</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm" id="nav-cta-btn">Enquire Now</a>
+      </div>
+      
+      <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       2. Subpage Hero
+       ========================================================================== -->
+  <section class="subpage-hero" id="subpage-hero">
+    <div class="container">
+      <h1>Our Story</h1>
+      <p>A family-owned builder focused on crafting strong foundations and long-term buyer relationships in Navi Mumbai since 2011.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. Main History Section
+       ========================================================================== -->
+  <section class="section-cream" id="history-section">
+    <div class="container">
+      <div class="grid-12 align-center">
+        <div class="col-6 col-12-tablet">
+          <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md);">
+            <img src="assets/images/amar-malhotra.png" alt="Amar Malhotra inspects site" style="width:100%; height:auto; display:block;">
+          </div>
+        </div>
+        
+        <div class="col-6 col-12-tablet d-flex flex-column gap-20">
+          <span class="tag-badge" style="color: var(--color-gold);">Est. 2011</span>
+          <h2>A Legacy of Personal Supervision</h2>
+          <p class="large">Iconic Homes Infracon was founded by Amar Malhotra with a singular commitment: treating every client's house construction as if it were his own family home.</p>
+          <p>Before launching Iconic Homes, Amar ji spent 15 years supervising civil construction projects for large infrastructure corporations. He noticed a worrying trend: as developers grew bigger, their designs became more sterile, their materials cheaper, and their relationship with actual homebuyers became completely disconnected, hidden behind brokers and salespeople.</p>
+          <p>He founded Iconic Homes to change that. By focusing on a single active development at any given time, he ensures that every pillar cast, every brick laid, and every plumbing line run is inspected by him or his direct site managers. There are no middle-men and no brokerage commissions. You deal direct with the builder.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. Core Values
+       ========================================================================== -->
+  <section class="section-white" id="values-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+        <span class="tag-badge" style="color: var(--color-gold);">Our Pillars</span>
+        <h2>The Values We Build Upon</h2>
+        <p>A family home is the largest investment most Indian households make. We protect that investment through absolute commitment to three core operational values.</p>
+      </div>
+      
+      <div class="values-grid">
+        <div class="value-card" id="value-integrity">
+          <h4 style="color: var(--color-navy); margin-bottom: 12px;">Uncompromising Integrity</h4>
+          <p style="font-size: 0.9375rem; color: var(--color-grey);">We upload our structural maps, layout permissions, and bank escrow files directly to the state RERA portal. We do not make false promises about possession times or material brands. What is written in the contract is exactly what is delivered.</p>
+        </div>
+        <div class="value-card" id="value-supervision">
+          <h4 style="color: var(--color-navy); margin-bottom: 12px;">On-Site Supervision</h4>
+          <p style="font-size: 0.9375rem; color: var(--color-grey);">We limit our portfolio to one active construction project at a time. This allows our management team to live on-site, supervising contractors daily to prevent shortcuts in plumbing, waterproofing, and structural steel reinforcement.</p>
+        </div>
+        <div class="value-card" id="value-accountability">
+          <h4 style="color: var(--color-navy); margin-bottom: 12px;">Direct Accountability</h4>
+          <p style="font-size: 0.9375rem; color: var(--color-grey);">We do not hire commission-based real estate brokers to sell our houses. Our site office is managed by our own team. If you buy a home from us, you have a direct phone line to the company directors, ensuring any concern is solved instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. Team Section
+       ========================================================================== -->
+  <section class="section-cream" id="team-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 56px;">
+        <span class="tag-badge" style="color: var(--color-gold);">The Builders</span>
+        <h2>The Team Behind Iconic Homes</h2>
+        <p>Real accountability requires real faces. Meet the team supervising the design and delivery of your home.</p>
+      </div>
+      
+      <div class="grid-12 justify-center">
+        <div class="col-4 col-12-tablet">
+          <div class="card" style="text-align: center;" id="team-card-amar">
+            <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; box-shadow: var(--shadow-sm);">
+              <img src="assets/images/amar-malhotra.png" alt="Amar Malhotra" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <h3>Amar Malhotra</h3>
+            <span class="meta-text" style="color: var(--color-gold); font-weight:600; text-transform:uppercase; font-size:0.8125rem; display:block; margin-bottom:12px;">Founder &amp; Site Director</span>
+            <p style="font-size: 0.875rem;">Over 25 years of civil engineering and residential construction management experience. Supervises structural work on-site daily.</p>
+          </div>
+        </div>
+        <div class="col-4 col-12-tablet">
+          <div class="card" style="text-align: center;" id="team-card-rahul">
+            <div style="width: 140px; height: 140px; border-radius: 50%; overflow: hidden; margin: 0 auto 20px; box-shadow: var(--shadow-sm); display:flex; align-items:center; justify-content:center; background-color:var(--color-navy); color:var(--color-white); font-size: 2.5rem; font-weight:700;">
+              RM
+            </div>
+            <h3>Rahul Malhotra</h3>
+            <span class="meta-text" style="color: var(--color-gold); font-weight:600; text-transform:uppercase; font-size:0.8125rem; display:block; margin-bottom:12px;">Partner &amp; Procurement Manager</span>
+            <p style="font-size: 0.875rem;">Handles vendor relationships and material inspections. Inspects concrete grades, steel deliveries, and electrical/plumbing fittings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. Call to Action Strip
+       ========================================================================== -->
+  <section class="section-navy" id="cta-strip" style="text-align: center; padding: 60px 0;">
+    <div class="container d-flex flex-column align-center gap-24">
+      <h3 style="color:var(--color-white);">Want to inspect our construction quality?</h3>
+      <p style="max-width: 600px; margin: 0 auto;">We welcome prospective buyers to visit our active Tulsi Tower site in Kharghar. Walk the site, check the steel, inspect the concrete, and talk directly to Amar Malhotra.</p>
+      <div class="d-flex gap-16 flex-wrap justify-center">
+        <a href="contact.html" class="btn btn-primary" id="cta-visit-btn">Schedule Site Visit</a>
+        <a href="#" class="btn btn-secondary-light" data-config="whatsapp" id="cta-chat-btn">Chat with Founder</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. Footer Section
+       ========================================================================== -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="grid-12">
+        <div class="col-4 col-12-tablet d-flex flex-column gap-16">
+          <div class="footer-logo">
+            <span class="logo-text" data-config="company">Iconic Homes</span>
+            <span class="logo-tagline" style="display:block;" data-config="tagline-hindi">आपके सपनों का घर</span>
+          </div>
+          <p style="font-size: 0.875rem;">A family-owned developer based on absolute integrity, delivering premium Vastu-compliant residential housing projects direkt from the builder without broker commission.</p>
+        </div>
+        
+        <div class="col-3 col-6-mobile">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story (About)</a></li>
+            <li><a href="tulsi-tower.html">Tulsi Tower (Active Project)</a></li>
+            <li><a href="completed-projects.html">Completed Projects</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="gallery.html">Site Milestones</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-2 col-6-mobile">
+          <h4>Legals</h4>
+          <ul class="footer-links">
+            <li><a href="rera-disclosures.html">RERA Disclosures</a></li>
+            <li><a href="rera-disclosures.html#compliance">State Compliance</a></li>
+            <li><a href="rera-disclosures.html#reports">Quarterly Reports</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-3 col-12-tablet">
+          <h4>Office Details</h4>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <span style="font-size: 0.875rem;" data-config="address">Loading Office Address...</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <a href="tel:+919876543210" style="font-size: 0.875rem;" data-config="phone">+91 98765 43210</a>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="clock"></i>
+            <span style="font-size: 0.875rem;" data-config="hours">Loading timings...</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom d-flex justify-between align-center flex-wrap gap-16">
+        <div>
+          <span>&copy; <span id="current-year">2026</span> <span data-config="company">Iconic Homes Infracon</span>. All Rights Reserved.</span>
+        </div>
+        <div class="rera-badge">
+          <i data-lucide="shield-check"></i>
+          <span>RERA No. <span data-config="rera">Loading...</span></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       8. Floating WhatsApp Button
+       ========================================================================== -->
+  <div class="whatsapp-widget" id="whatsapp-widget">
+    <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
+    <a href="#" class="whatsapp-button" data-config="whatsapp" aria-label="Chat on WhatsApp" id="whatsapp-widget-btn">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.99L2 22l5.19-1.354a9.95 9.95 0 0 0 4.82 1.233h.005c5.502 0 9.985-4.479 9.988-9.986.002-2.67-1.032-5.18-2.918-7.07A9.92 9.92 0 0 0 12.012 2zm5.72 14.158c-.313.882-1.815 1.72-2.5 1.83-.687.11-1.372.19-3.953-.872-3.13-1.29-5.11-4.48-5.267-4.69-.157-.21-1.25-1.666-1.25-3.178 0-1.513.79-2.257 1.07-2.56.282-.303.62-.38.83-.38.21 0 .42.01.6.02.19.01.44-.08.69.53.25.61.85 2.08.93 2.23.08.15.13.33.03.53-.1.2-.21.33-.37.52-.16.19-.34.42-.48.56-.16.16-.33.34-.14.67.19.33.85 1.4 1.83 2.28 1.25 1.12 2.3 1.47 2.63 1.63.33.16.52.12.72-.11.2-.23.85-.99 1.08-1.33.23-.34.46-.29.77-.17.31.12 1.99.94 2.33 1.11.34.17.57.25.65.39.08.14.08.82-.23 1.7z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Shared Configuration & JS -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -4,26 +4,33 @@ const CONFIG = {
   taglineHindi: "आपका घर, हमारी जिम्मेदारी",
   establishedYear: 2011,
   
-  // RERA Settings
-  reraNumber: "MahaRERA P51800098765",
-  reraPortalUrl: "https://maharerait.maharashtra.gov.in/",
-  
+  // RERA Settings (West Bengal RERA — verified 2026-06-19)
+  reraNumber: "WBRERA/P/NOR/2025/003475",
+  reraPortalUrl: "https://rera.wb.gov.in/",
+
+  // Tax & Regulatory Compliance
+  constitution: "Partnership Firm",
+  gstin: "19AAJFI7150E1ZB",
+  pan: "AAJFI7150E",
+  partners: ["Amar Kumar Malhotra", "Debashish Adhikary"],
+  tradeLicenceValidity: "28/11/2028",
+
   // Contact Details
-  contactPhone: "+91 98765 43210",
-  contactPhoneRaw: "+919876543210",
+  contactPhone: "+91 70440 89251",
+  contactPhoneRaw: "+917044089251",
   contactEmail: "enquiry@iconichomes.in",
-  
+
   // WhatsApp Configuration
-  whatsappNumber: "+919876543210",
+  whatsappNumber: "+917044089251",
   whatsappDefaultMessage: "Hello, I am interested in exploring Tulsi Tower. Please share more details.",
-  
+
   // Office Details
-  officeAddress: "Tulsi Tower Site Office, Plot 45, Sector 12, Kharghar, Navi Mumbai, Maharashtra 410210",
-  officeMapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.669431872156!2d73.06456041538356!3d19.03429815756403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c2114ffffffd%3A0xe54e60dc2eef2978!2sKharghar%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1717240000000!5m2!1sen!2sin",
+  officeAddress: "Iconic Homes Infracon, Ground Floor, Omkar Apartment, Kaikhali, Ghoshpara, PO & PS Airport, Kolkata 700052, West Bengal",
+  officeMapEmbedUrl: "https://maps.google.com/maps?q=Kaikhali%20Chiriamore%2C%20Kolkata%20700052&t=&z=15&ie=UTF8&iwloc=&output=embed",
   officeHours: "Monday to Saturday, 10:00 AM to 6:00 PM",
-  
+
   // Project Details
-  projectPossessionDate: "December 2027",
+  projectPossessionDate: "December 2026",
   
   // Stats
   stats: {

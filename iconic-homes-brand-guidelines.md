@@ -140,7 +140,7 @@ Google Fonts links:
 
 - Background: `#EAF4EF` · Border: 1px solid `#2A6049` · Border radius: 6px
 - Icon: shield/verified · Text: Inter SemiBold 13px `#2A6049`
-- Display: "RERA Registered · MahaRERA P12345678" (example)
+- Display: "RERA Registered · WBRERA/P/NOR/2025/003475" (Tulsi Tower's actual West Bengal RERA number)
 
 ---
 

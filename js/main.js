@@ -72,7 +72,8 @@ function injectConfigValues() {
   // WhatsApp Links
   document.querySelectorAll('[data-config="whatsapp"]').forEach(el => {
     const encodedMsg = encodeURIComponent(config.whatsappDefaultMessage);
-    el.href = `https://wa.me/${config.whatsappNumber}?text=${encodedMsg}`;
+    const cleanNumber = (config.whatsappNumber || '').replace(/[^0-9]/g, '');
+    el.href = `https://wa.me/${cleanNumber}?text=${encodedMsg}`;
     el.target = "_blank";
     el.rel = "noopener noreferrer";
   });

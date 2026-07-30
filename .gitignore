@@ -6,3 +6,14 @@ Thumbs.db
 *.log
 
 .vercel
+
+# Secrets & Environment variables
+.env
+.env.*
+
+# Private financial/legal documents accidentally dropped in this website repo
+# (term-loan sanction, tax/ROC acknowledgements). NEVER commit to a public/deploy repo.
+Iconic TL upto*.pdf
+ACK*.pdf
+ACK*.md
+

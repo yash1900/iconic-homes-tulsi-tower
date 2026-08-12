@@ -288,16 +288,18 @@ section {
 /* Navigation Links */
 .nav-menu {
   display: flex;
+  align-items: center;
   list-style: none;
-  gap: 32px;
+  gap: 20px;
 }
 
 .nav-link {
-  font-size: 0.9375rem; /* 15px */
+  font-size: 0.875rem; /* 14px */
   font-weight: 500;
   color: var(--color-white);
   position: relative;
-  padding: 8px 0;
+  padding: 6px 0;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -999,7 +1001,7 @@ section {
 }
 
 /* Mobile Nav Overlay */
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
   section {
     padding: var(--section-padding-mobile) 0;
   }

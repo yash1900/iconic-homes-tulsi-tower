@@ -34,6 +34,9 @@ function injectConfigValues() {
   document.querySelectorAll('[data-config="company"]').forEach(el => {
     el.textContent = config.companyName;
   });
+  document.querySelectorAll('[data-config="company-short"]').forEach(el => {
+    el.textContent = config.companyShort || 'Iconic Homes';
+  });
 
   // Taglines
   document.querySelectorAll('[data-config="tagline"]').forEach(el => {

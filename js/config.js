@@ -1,5 +1,6 @@
 const CONFIG = {
   companyName: "Iconic Homes Infracon",
+  companyShort: "Iconic Homes",
   tagline: "Built on Trust. Designed for Life.",
   taglineHindi: "आपका घर, हमारी जिम्मेदारी",
   establishedYear: 2011,

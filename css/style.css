@@ -243,26 +243,45 @@ section {
 /* Logo Design */
 .logo-block {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
   line-height: 1.1;
+}
+
+.logo-emblem-img {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition-normal);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.site-header.scrolled .logo-emblem-img {
+  height: 38px;
+}
+
+.logo-text-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-text {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--color-white);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
   transition: var(--transition-normal);
 }
 
 .logo-tagline {
-  font-size: 0.6875rem;
-  font-weight: 500;
+  font-size: 0.625rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 3px;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+  margin-top: 2px;
   transition: var(--transition-normal);
 }
 
@@ -902,16 +921,27 @@ section {
 }
 
 .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 16px;
+}
+
+.footer-logo-emblem {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4));
 }
 
 .footer-logo .logo-text {
   color: var(--color-white);
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .footer-logo .logo-tagline {
   color: var(--color-gold);
+  letter-spacing: 0.22em;
 }
 
 .footer-links {
